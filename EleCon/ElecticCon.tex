@@ -1,0 +1,48 @@
+\documentclass[10pt]{ctexart}
+\usepackage{NotesTeX}
+
+%\usepackage{showframe}
+
+\title{\begin{center}{\Huge \textit{电机拖动}}\\{{\itshape 自动控制原理}}\end{center}}
+\author{Seastian Ludwig\footnote{\href{https://geodesick.com/}{\textit{My Personal Website}}}}
+
+
+\affiliation{
+   University of Northeast Electronic Power University\\
+Electronic Engineer school\\
+}
+
+\emailAdd{2019301011016@neepu.edu.cn}
+\begin{document}
+\maketitle
+\flushbottom
+\newpage
+\pagestyle{fancynotes}
+
+\part{机电传动系统的动力学基础}
+\section{运动方程式}
+单轴运动系统
+\begin{equation}
+    T_M -T_{L} =J\frac{{\rm d} \omega}{{\rm d}t}
+\end{equation}
+
+$ T_{M}  $电机拖动转矩
+
+$ T_{L}  $负载转矩
+
+$ J $ 转动惯量 
+
+\begin{definition}
+    运动方程实用形式：
+    \begin{equation}
+    T_{M}-T_{L}=\frac{GD^{2} }{375}\frac{{\rm d}n}{{\rm d} t}  
+    \end{equation}
+\end{definition}
+\begin{proof}
+    $$	J=m\rho^{2}=\frac{mD^{2} }{4}=\frac{1}{4}\frac{G}{g}D^{2} =\frac{1}{4}\frac{GD^{2}}{g} $$ 
+    或
+    $$	GD^{2} =4gJ$$
+    且
+    $$	\omega=\frac{2\pi}{60} n$$ 
+\end{proof}
+\end{document}
